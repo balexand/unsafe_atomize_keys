@@ -1,6 +1,12 @@
 # UnsafeAtomizeKeys
 
-**TODO: Add description**
+Function to convert all binary keys to atoms in a map. Keys of other types will be left unchanged.
+The conversion will deeply traverse nested maps and lists.
+
+The name "unsafe" refers to the fact that atoms in Elixir/Erlang are not garbage collected. If
+this function is called on maps with an unbounded number of keys then system resources could be
+depleted. This is intended for use when calling trusted APIs that will have a finite number of
+unique keys.
 
 ## Installation
 
@@ -18,4 +24,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/unsafe_atomize_keys](https://hexdocs.pm/unsafe_atomize_keys).
-

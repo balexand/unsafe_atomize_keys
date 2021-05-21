@@ -1,8 +1,4 @@
 defmodule UnsafeAtomizeKeysTest do
-  use ExUnit.Case
-  doctest UnsafeAtomizeKeys
-
-  test "greets the world" do
-    assert UnsafeAtomizeKeys.hello() == :world
-  end
+  use ExUnit.Case, async: true
+  doctest UnsafeAtomizeKeys, import: true
 end
