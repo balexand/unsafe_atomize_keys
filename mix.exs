@@ -11,7 +11,7 @@ defmodule UnsafeAtomizeKeys.MixProject do
       deps: deps(),
       package: [
         licenses: ["MIT"],
-        links: %{"GitHub" => "https://github.com/balexand/sanity"}
+        links: %{"GitHub" => "https://github.com/balexand/unsafe_atomize_keys"}
       ]
     ]
   end
