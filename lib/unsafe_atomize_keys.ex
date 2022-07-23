@@ -26,15 +26,13 @@ defmodule UnsafeAtomizeKeys do
   end
 
   defp deep_atomize(%{} = map, func) do
-    map
-    |> Enum.map(fn
+    Map.new(map, fn
       {k, v} when is_binary(k) ->
         {k |> func.() |> String.to_atom(), deep_atomize(v, func)}
 
       {k, v} ->
         {k, deep_atomize(v, func)}
     end)
-    |> Map.new()
   end
 
   defp deep_atomize(list, func) when is_list(list) do
