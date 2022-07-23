@@ -16,7 +16,7 @@ by adding `unsafe_atomize_keys` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:unsafe_atomize_keys, "~> 0.1.0"}
+    {:unsafe_atomize_keys, "~> 1.1.0"}
   ]
 end
 ```
