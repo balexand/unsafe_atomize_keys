@@ -9,8 +9,8 @@ jobs:
 
     strategy:
       matrix:
-        elixir-version: ["1.10", "1.11", "1.12"]
-        otp-version: ["22", "23", "24"]
+        elixir-version: ["1.12", "1.13"]
+        otp-version: ["23", "24", "25"]
 
     steps:
       - uses: actions/checkout@v2
@@ -26,6 +26,6 @@ jobs:
       - name: Compile
         run: MIX_ENV=test mix compile --warnings-as-errors
       - name: Run tests
-        run: mix test
+        run: mix test --warnings-as-errors
       - name: Check format
         run: mix format --check-formatted

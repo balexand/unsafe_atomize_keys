@@ -6,7 +6,7 @@ defmodule UnsafeAtomizeKeys.MixProject do
       app: :unsafe_atomize_keys,
       description: "Function to convert all binary keys to atoms in a map.",
       version: "1.1.0",
-      elixir: "~> 1.10",
+      elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: [
