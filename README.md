@@ -1,5 +1,7 @@
 # UnsafeAtomizeKeys
 
+[![Package](https://img.shields.io/hexpm/v/unsafe_atomize_keys.svg)](https://hex.pm/packages/unsafe_atomize_keys) [![Documentation](http://img.shields.io/badge/hex.pm-docs-green.svg?style=flat)](https://hexdocs.pm/unsafe_atomize_keys) ![CI](https://github.com/balexand/unsafe_atomize_keys/actions/workflows/elixir.yml/badge.svg)
+
 Function to convert all binary keys to atoms in a map. Keys of other types will be left unchanged.
 The conversion will deeply traverse nested maps and lists.
 
